@@ -6,7 +6,7 @@ $(document).ready(function(e) {
 $('.imagenpastel').on('tap', function(){
 	$.ajax({
 		type: "POST",
-		url: "http://192.168.1.73/proyecto/buscarpasteles.php",
+		url: "http://192.168.1.170/proyecto/buscarpasteles.php",
 		data: "pastel=" + $(this).attr('id'),
 		error: function()
 		{
@@ -15,7 +15,7 @@ $('.imagenpastel').on('tap', function(){
 		success: function(respuesta){
 			
 		  var pastel=JSON.parse(respuesta);
-		 
+		 alert (pastel.nombre_pastel);
 		  $('#nombre_pastel').html(pastel.nombre_pastel);
 		    $('#clave_pastel').html(pastel.clave_pastel);
 			  $('#precio_pastel').html(pastel.precio_pastel);
