@@ -14,6 +14,7 @@ $('.imagenpastel').on('tap', function(){
 		},
 		success: function(respuesta){
 		  var pastel=JSON.parse(respuesta);
+		  alert (pastel.nombre_pastel);
 		  $('#nombre_pastel').html(pastel.nombre_pastel);
 		    $('#clave_pastel').html(pastel.clave_pastel);
 			  $('#precio_pastel').html(pastel.precio_pastel);
