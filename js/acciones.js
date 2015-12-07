@@ -10,10 +10,16 @@ $('.imagenpastel').on('tap', function(){
 		data: "pastel=" + $(this).attr('id'),
 		error: function()
 		{
-		 alart ("error en la conexio");	
+		 alert ("error en la conexio");	
 		},
 		success: function(respuesta){
-		 alert (respuesta);	
+		  var pastel=JSON.parse(respuesta);
+		  $('#nombre_pastel').html(pastel.nombre_pastel);
+		    $('#clave_pastel').html(pastel.clave_pastel);
+			  $('#precio_pastel').html(pastel.precio_pastel);
+			    $('#numpersonas_pastel').html(pastel.numpersonas_pastel);
+				$(':mobile-pagecontainer').pagecontainer('change','#pedido',{transition:'pop'
+				});
 		}
 	});
 });
