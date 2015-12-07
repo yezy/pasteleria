@@ -13,9 +13,9 @@ $('.imagenpastel').on('tap', function(){
 		 alert ("error en la conexion");	
 		},
 		success: function(respuesta){
-			 alert (respuesta);
+			
 		  var pastel=JSON.parse(respuesta);
-		  alert (pastel.nombre_pastel);
+		 
 		  $('#nombre_pastel').html(pastel.nombre_pastel);
 		    $('#clave_pastel').html(pastel.clave_pastel);
 			  $('#precio_pastel').html(pastel.precio_pastel);
