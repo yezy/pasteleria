@@ -6,7 +6,7 @@ $(document).ready(function(e) {
 $('.imagenpastel').on('tap', function(){
 	$.ajax({
 		type: "POST",
-		url: "http://192.168.1.170/proyecto/buscarpasteles.php",
+		url: "http://192.168.1.73/proyecto/buscarpasteles.php",
 		data: "pastel=" + $(this).attr('id'),
 		error: function()
 		{
