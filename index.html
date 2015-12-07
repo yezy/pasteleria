@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+   <link rel="stylesheet" href="css/mitema.min.css"    
+        
+<link href="css/mitema2.min.css" rel="stylesheet" type="text/css"/>
+   <style type="text/css">
+   #menu .ui-content div div div {
+	font-weight: bold;
+}
+   </style>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <script src="phonegap.js"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+ 
+ <!-- Principal Pasteleria -->
+ <div data-role="page" id="principal" >   
+  <div data-role="header">
+    <h1><strong>Pasteleria</strong></h1>
+    <h1>"Sweet Borek"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p><a href="#menu" class="ui-btn ui-btn-corner-all  ui-btn-icon-right" id="btnconsulta">Pasteles de Boda</a></p>
+    
+    <p>&nbsp;</p>
+  </div>
+  <iframe src="indexpas.html" style="width:320px;height:240px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+ 
+  <div data-role="footer" align="center">Bienvenido</div>
+ </div>  
+ <!-- Principal pasteleria -->
+ 
+ 
+ <!--Menu Pasteleria-->
+ 
+ <div data-role="page" id="menu">   
+  <div data-role="header">
+  
+   <h1>Pasteles</h1>
+   <h1>"Listado"</h1>
+   <a href="#principal" class="ui-btn-left"data-icon="home" >inicio</a>
+    <a href="#pedido"  class="ui-btn-right"data-icon="home" >Pedido</a>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div align="center"> 
+   
+     
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="1"><a href="#pedido"  class="ui-btn"> <img src="images/1.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display: inline-block; font-weight: bold;">
+   <h3>Nombre del pastel:dulce boda  </h3>
+   <h3>Clave del pastel: 1 </h3>
+   <h3>precio del pastel:1500</h>
+   <h3> Numero de personas:300</h3>
+  </div>
+ </div>
+ 
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="2"><a href="#pedido"  class="ui-btn"> <img src="images/2.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display:inline-block">
+   <h3>Nombre del pastel:sweets moments </h3>
+   <h3>Clave del pastel: 2 </h3>
+   <h3>precio del pastel:1900</h>
+   <h3> Numero de personas:300</h3>
+  </div>
+ </div>
+ 
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="3"><a href="#pedido"  class="ui-btn"> <img src="images/3.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display: inline-block; font-weight: bold;">
+   <h3>Nombre del pastel:cake of flowers</h3>
+   <h3>Clave del pastel: 3 </h3>
+   <h3>precio del pastel:</h>2000
+   <h3> Numero de personas:350</h3>
+  </div>
+ </div>
+ 
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="4"><a href="#pedido"  class="ui-btn"> <img src="images/4.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display:inline-block">
+   <h3>Nombre del pastel:sweet wedding </h3>
+   <h3>Clave del pastel: 4 </h3>
+   <h3>precio del pastel:</h>2500
+   <h3> Numero de personas:380</h3>
+  </div>
+ </div>
+ 
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="5"><a href="#pedido"  class="ui-btn"> <img src="images/5.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display:inline-block">
+   <h3>Nombre del pastel: cake candy</h3>
+   <h3>Clave del pastel: 5 </h3>
+   <h3>precio del pastel:</h>1800
+   <h3> Numero de personas:250</h3>
+  </div>
+ </div>
+ 
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="6"><a href="#pedido"  class="ui-btn"> <img src="images/6.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display:inline-block">
+   <h3>Nombre del pastel:minims marriage </h3>
+   <h3>Clave del pastel:6</h3>
+   <h3>precio del pastel:</h>
+1500
+   <h3> Numero de personas:100</h3>
+  </div>
+ </div>
+ 
+ <div>
+  <div style="display:inline-block">
+   <div class="imagenpastel" id="7"><a href="#pedido"  class="ui-btn"> <img src="images/7.jpg" width="176" height="169"/></a></div>
+  </div>
+ 
+  <div style="display:inline-block">
+   <h3>Nombre del pastel: tart pretty</h3>
+   <h3>Clave del pastel: 7 </h3>
+   <h3>precio del pastel:</h>2000
+   <h3> Numero de personas:190</h3>
+  </div>
+ </div>
+ 
+ 
+ 
+</div>
+ </div>
+ <div data-role="footer" align="center">Pasteleria  "Sweet Borek"</div>  
+ </div>
+ 
+<!--Menu Pasteleria-->
+
+
+<!-- opciones -->
+ <div data-role="page" id="pedido">   
+  <div data-role="header">
+  
+   <h1>¿	Quieres este Pastel?</h1>
+   <p>&nbsp;</p>
+   <a href="#menu" class="ui-btn-left"data-icon="home" >Menu</a>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div align="center"> 
+    Nombre pastel 
+    
+    <input name="txtnombrepastel" type="text" value="{nom_pastel}">
+    
+  </p>
+  <p>{mensaje}</p>
+  <p>Nombre 
+    <input name="txtnombre" type="text">
+  </p>
+  <p>Apellidos 
+    <input name="txtapellidos" type="text">
+  </p>
+  <p>Dirección 
+    <input name="txtdireccion" type="text">
+  </p>
+  <p>Hora de entrega 
+    <input name="txthora" type="text">
+  </p>
+  <p>Fecha entrega 
+    <input name="txtfecha" type="text">
+      </p>
+  <p>Precio a pagar 
+      <input name="txtprecio" type="text" value="{precio}">
+  </p>
+  <input name="btnenviar" type="submit" value="Enviar">
+  <input name="btncancelar" type="reset" value="cancelar">
+   </div>
+  </div>  
+ </div>
+ <!-- opciones -->
+ 
+ </body>
+</html> 
