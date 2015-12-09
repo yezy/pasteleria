@@ -6,7 +6,7 @@ document.addEventListener("deviceready",function(){
 $('.imagenpastel').on('tap', function(){
 	$.ajax({
 		type: "POST",
-		url: "http://192.168.1.82/proyecto/buscarpasteles.php",
+		url: "http://192.168.1.64/proyecto/buscarpasteles.php",
 		data: "pastel=" + $(this).attr('id'),
 		error: function()
 		{
